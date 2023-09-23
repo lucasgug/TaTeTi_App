@@ -139,7 +139,6 @@ fun GameScreen(
                                 Cross()
                             }
                         }
-
                     }
 
                     }
@@ -159,7 +158,6 @@ fun GameScreen(
                     DrawVictoryLine(state = state)
                 }
             }
-
         }
 
         Row (

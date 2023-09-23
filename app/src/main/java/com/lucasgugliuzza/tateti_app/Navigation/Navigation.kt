@@ -32,10 +32,8 @@ fun Navigation() {
        composable(ScreenRoot.GameScreen.route){
            GameScreen(viewModel = GameViewModel())
        }
-
    }
 }
-
 sealed class ScreenRoot(val route : String ){
     object SplashScreen : ScreenRoot("splash")
     object GameScreen : ScreenRoot("home")
