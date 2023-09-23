@@ -1,15 +1,16 @@
 # TaTeTi_App
 Application to play the famous game called Tic Tac Toe
 
-
-
-##  Screen
-![Screen](https://i.imgur.com/ZuyIjlk.png)  |  ![Screen](https://imgur.com/QYdx1mn.png) 
-
-
+##  Screens
+Screen1          |  Screen2
+:-------------------------:|:-------------------------:
+![Screen1](https://i.imgur.com/ZuyIjlk.png)  |  ![Screen2](https://imgur.com/QYdx1mn.png) 
 
 ## 🎥 Demo Video
 ![vid](https://i.imgur.com/HZOl8KJ.gif)
+
+<img src="https://i.imgur.com/HZOl8KJ.gif" width="500" height="850"/>
+
 
 
 
@@ -25,4 +26,4 @@ Application to play the famous game called Tic Tac Toe
 
 ## Features
 - SplashScreen that redirects based whether the user is logged in or not.
-- 
+
