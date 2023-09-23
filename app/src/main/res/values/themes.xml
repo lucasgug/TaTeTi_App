@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.TaTeTi_App" parent="android:Theme.Material.Light.NoActionBar" />
+    
+<!--    <style name="Theme.MyApp.SplashScreen"  parent="Theme.SplashScreen" >-->
+<!--        <item name="windowSplashScreenBackground">#556AE6</item>-->
+<!--        <item name="windowSplashScreenAnimatedIcon">@drawable/splashscreen</item>-->
+<!--        <item name="windowSplashScreenAnimationDuration">1000</item>-->
+<!--        <item name="postSplashScreenTheme">@style/Theme.TaTeTi_App</item>-->
+<!--        <item name="splashScreenIconSize">160dp</item>-->
+<!--    </style>-->
+
+</resources>
