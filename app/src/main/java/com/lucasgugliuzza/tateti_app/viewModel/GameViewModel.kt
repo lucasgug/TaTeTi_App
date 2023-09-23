@@ -15,7 +15,8 @@ class GameViewModel()  : ViewModel() {
     var state by mutableStateOf(GameState())
         private set
 
-    val boardItems: MutableMap<Int, BoardCellValue> = mutableMapOf(
+    //asigno el valor de la celda
+    val boardItems: MutableMap <Int, BoardCellValue> = mutableMapOf(
 
         1 to BoardCellValue.NONE,
         2 to BoardCellValue.NONE,
@@ -44,7 +45,7 @@ class GameViewModel()  : ViewModel() {
     }
 
     private fun gameReset() {
-        boardItems.forEach { i, _ ->
+        boardItems.forEach { i , _ ->
             boardItems[i] = BoardCellValue.NONE
         }
         state = state.copy(
@@ -56,7 +57,7 @@ class GameViewModel()  : ViewModel() {
     }
 
     private fun addValueToBoard(cellNo: Int) {
-        if (boardItems[cellNo] != BoardCellValue.NONE) {
+        if (boardItems[cellNo] != BoardCellValue.NONE) { // si esa celda esta con X o O no devuelva nada
             return
         }
         if (state.currentTurn == BoardCellValue.CIRCLE) {
@@ -82,6 +83,7 @@ class GameViewModel()  : ViewModel() {
             }
         } else if (state.currentTurn == BoardCellValue.CROSS) {
             boardItems[cellNo] = BoardCellValue.CROSS
+
             if (checkForVictory(BoardCellValue.CROSS)){
                 state = state.copy(
                     hintText =  "Player 'X' Won  ",
@@ -143,7 +145,7 @@ class GameViewModel()  : ViewModel() {
     }
 
     private fun hasBoardFull(): Boolean {
-        if (boardItems.containsValue(BoardCellValue.NONE)) return false
+        if (boardItems.containsValue(BoardCellValue.NONE)) return false // si no estan las celdas vacia return false
         return true
     }
 

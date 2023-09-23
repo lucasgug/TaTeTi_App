@@ -161,7 +161,7 @@ fun GameScreen(
             }
 
         }
-        
+
         Row (
             modifier = Modifier.fillMaxWidth(),
             verticalAlignment =Alignment.CenterVertically,

@@ -17,36 +17,37 @@ fun BoardBase() {
     Canvas(
         modifier = Modifier
             .size(300.dp)
+           // .padding(10.dp)
 
     ){
-        drawLine(
-            color = Color.Gray,
-            strokeWidth = 5f, //grosor de la linea
-            cap = StrokeCap.Round, //redondea la linea la pricipio y al final
-            start = Offset(x= 0f , y = 0f),
-            end = Offset(x = 0f , y = size.height)
-        )
-        drawLine(
-            color = Color.Gray,
-            strokeWidth = 5f, //grosor de la linea
-            cap = StrokeCap.Round, //redondea la linea la pricipio y al final
-            start = Offset(x= 0f , y = 0f),
-            end = Offset(x = size.width , y = 0f)
-        )
-        drawLine(
-            color = Color.Gray,
-            strokeWidth = 5f, //grosor de la linea
-            cap = StrokeCap.Round, //redondea la linea la pricipio y al final
-            start = Offset(x= size.width , y = 0f),
-            end = Offset(x = size.width , y = size.height)
-        )
-        drawLine(
-            color = Color.Gray,
-            strokeWidth = 5f, //grosor de la linea
-            cap = StrokeCap.Round, //redondea la linea la pricipio y al final
-            start = Offset(x= 0f , y = size.height),
-            end = Offset(x = size.width , y = size.height)
-        )
+//        drawLine(
+//            color = Color.Gray,
+//            strokeWidth = 5f, //grosor de la linea
+//            cap = StrokeCap.Round, //redondea la linea la pricipio y al final
+//            start = Offset(x= 0f , y = 0f),
+//            end = Offset(x = 0f , y = size.height)
+//        )
+//        drawLine(
+//            color = Color.Gray,
+//            strokeWidth = 5f, //grosor de la linea
+//            cap = StrokeCap.Round, //redondea la linea la pricipio y al final
+//            start = Offset(x= 0f , y = 0f),
+//            end = Offset(x = size.width , y = 0f)
+//        )
+//        drawLine(
+//            color = Color.Gray,
+//            strokeWidth = 5f, //grosor de la linea
+//            cap = StrokeCap.Round, //redondea la linea la pricipio y al final
+//            start = Offset(x= size.width , y = 0f),
+//            end = Offset(x = size.width , y = size.height)
+//        )
+//        drawLine(
+//            color = Color.Gray,
+//            strokeWidth = 5f, //grosor de la linea
+//            cap = StrokeCap.Round, //redondea la linea la pricipio y al final
+//            start = Offset(x= 0f , y = size.height),
+//            end = Offset(x = size.width , y = size.height)
+//        )
         drawLine(
             color = Color.Gray,
             strokeWidth = 5f, //grosor de la linea
@@ -126,11 +127,12 @@ fun WinHorizontalLine1() {
     Canvas(
         modifier = Modifier
             .size(300.dp)
+            .padding(bottom = 55.dp)
 
     ){
         drawLine(
             color = Color.Red,
-            strokeWidth =  12f ,
+            strokeWidth =  10f ,
             cap = StrokeCap.Round,
             start = Offset(x = 0f , y = size.height * 1/6   ),
             end = Offset(x = size.width, y= size.height * 1/6   ),
@@ -144,10 +146,11 @@ fun WinHorizontalLine2() {
         modifier = Modifier
             .size(300.dp)
 
+
     ){
         drawLine(
             color = Color.Red,
-            strokeWidth =  12f ,
+            strokeWidth =  10f ,
             cap = StrokeCap.Round,
             start = Offset(x = 0f , y = size.height * 3/6 )  ,
             end = Offset(x = size.width, y= size.height * 3/6  )  ,
@@ -160,6 +163,8 @@ fun WinHorizontalLine3() {
     Canvas(
         modifier = Modifier
             .size(300.dp)
+            .padding(top = 65.dp)
+
 
     ){
         drawLine(
@@ -177,11 +182,14 @@ fun WinVerticallLine1() {
     Canvas(
         modifier = Modifier
             .size(300.dp)
+            .padding(end = 65.dp)
+
+
 
     ){
         drawLine(
             color = Color.Red,
-            strokeWidth =  12f ,
+            strokeWidth =  10f ,
             cap = StrokeCap.Round,
             start = Offset( x = size.width *1/6 , y = size.height   ),
             end = Offset( x = size.width *1/6 , y = 0f  ),
@@ -198,7 +206,7 @@ fun WinVerticallLine2() {
     ){
         drawLine(
             color = Color.Red,
-            strokeWidth =  12f ,
+            strokeWidth =  10f ,
             cap = StrokeCap.Round,
             start = Offset( x = size.width *3/6 , y = size.height   ),
             end = Offset( x = size.width *3/6 , y = 0f  ),
@@ -212,11 +220,12 @@ fun WinVerticallLine3() {
     Canvas(
         modifier = Modifier
             .size(300.dp)
+            .padding(start = 75.dp)
 
     ){
         drawLine(
             color = Color.Red,
-            strokeWidth =  12f ,
+            strokeWidth =  10f ,
             cap = StrokeCap.Round,
             start = Offset( x = size.width *5/6 , y = size.height   ),
             end = Offset( x = size.width *5/6 , y = 0f  ),
@@ -233,7 +242,7 @@ fun WinVDiagonallLine2() {
     ){
         drawLine(
             color = Color.Red,
-            strokeWidth =  12f ,
+            strokeWidth =  10f ,
             cap = StrokeCap.Round,
             start = Offset( x = 0f , y = size.height ),
             end = Offset( x = size.width , y = 0f  ),
@@ -250,7 +259,7 @@ fun WinVDiagonallLine1() {
     ){
         drawLine(
             color = Color.Red,
-            strokeWidth =  12f ,
+            strokeWidth =  10f ,
             cap = StrokeCap.Round,
             start = Offset( x = size.width  , y = size.height   ),
             end = Offset( x = 0f , y = 0f  ),
@@ -266,6 +275,9 @@ fun ComponentPreview() {
     WinHorizontalLine1()
     WinHorizontalLine2()
     WinHorizontalLine3()
+    WinVerticallLine1()
+    WinVerticallLine2()
+    WinVerticallLine3()
 
 
 
