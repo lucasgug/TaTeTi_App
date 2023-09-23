@@ -9,7 +9,7 @@ Application to play the famous game called Tic Tac Toe
 
 
 ## 🎥 Demo Video
-![vid](https://github.com/lucasgug/TaTeTi_App/assets/87914072/317d22b8-145e-43dc-ad8b-33ad47ce0d66)
+![vid](https://i.imgur.com/HZOl8KJ.gif)
 
 
 
