@@ -7,12 +7,7 @@ Screen1          |  Screen2
 ![Screen1](https://i.imgur.com/ZuyIjlk.png)  |  ![Screen2](https://imgur.com/QYdx1mn.png) 
 
 ## 🎥 Demo Video
-
-
-<img src="https://i.imgur.com/HZOl8KJ.gif" width="500" height="850"/>
-
-
-
+![vid](https://i.imgur.com/HZOl8KJ.gif)
 
 ## 🛠 Tech Stack
 
